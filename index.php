@@ -12,12 +12,10 @@ if (strpos($_SERVER['REQUEST_URI'],'.jpg') !== false) {
     exit();
 }
 
-//    header('Access-Control-Allow-Origin: *');
-//    header('Access-Control-Allow-Methods: GET, POST');
+    header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Methods: GET, POST');
 
-if (
-    true
-) {
+if (!empty($_POST)) {
 //        ini_set("default_socket_timeout", 10);
 
     header('Content-Type: none');

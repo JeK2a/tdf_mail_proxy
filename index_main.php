@@ -33,61 +33,6 @@ foreach ($data as $key => $value) {
     }
 }
 
-    $data = [
-        'id' => '1089363',
-        'from' => [
-//            'name' => 'Worker E.',
-//            'id' => 248,
-//            'email' => 'subscribe-1@tdf-service-1.online',
-//            'login' => 'subscribe-1@tdf-service-1.online',
-//            'password' => 'Td000000',
-//            'use_for_mailing' => '1',
-//            'name_from' => 'ТД Форт',
-//            'email_provider' => 'spaceweb.ru',
-//            'move_to' => '2006',
-//            'secure' => 'ssl',
-//            'host' => 'smtp.spaceweb.ru',
-//            'port' => '465',
-//            'charset' => 'utf-8',
-
-            'name' => 'Максимов Е.',
-            'id' => 55,
-            'email' => 'me@tdfort.ru',
-            'login' => 'me@tdfort.ru',
-            'password' => 'Td292989',
-            'use_for_mailing' => '0',
-            'name_from' => '',
-            'email_provider' => 'yandex.ru',
-            'move_to' => '0',
-            'secure' => 'ssl',
-            'host' => 'smtp.yandex.ru',
-            'port' => '465',
-            'charset' => 'utf-8'
-        ],
-
-        'smtp_id'   => '248',
-        'use_proxy' => '157',
-        'to'        => 'jek2ka@gmail.com',
-        'subject'   => 'Test',
-
-
-        'proxy' =>
-            [
-                'id' => '157',
-                'provider' => 'torguard',
-                'type' => 'SOCKS5',
-                'ip' => 'proxy.torguard.org',
-//                'ip' => '194.59.250.226',
-                'port' => '1090',
-                'user' => 'bnd7z3c8282mamc',
-                'password' => 'bM3gJE4CkkGjaLh'
-            ],
-        'body' => 'test
-    test
-    test'
-
-    ];
-
 $_POST['proxy'] = json_encode($data['proxy']);
 $_POST['from']  = json_encode($data['from']);
 

@@ -78,9 +78,9 @@ if (!empty($_POST)) {
     $done = $result['success'] ? 1 : -1;
 
 //    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=' . $tmp . '&done=' . $done;
-    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=' . $tmp . '&done=1';
+    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=test&done=1';
 
-//        file_get_contents($url);
+        file_get_contents($url);
 
 //    echo $tmp;
 

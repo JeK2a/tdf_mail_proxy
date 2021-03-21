@@ -212,6 +212,8 @@ class ProxySmtp
             curl_setopt($curl, CURLOPT_URL, $secure . "://" . $this->smtp_host . ":" . $this->smtp_port . "/" . explode('@', $this->smtp_user)[1]);
             curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
 
+            curl_setopt($curl, CURLOPT_UPLOAD, 1);
+
             // LOG
             if ($this->curl_is_logs) {
                 curl_setopt_array($curl, [

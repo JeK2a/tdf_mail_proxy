@@ -1,11 +1,12 @@
 <?php
 
+
+
 if (strpos($_SERVER['REQUEST_URI'],'.jpg') !== false) {
     $url = $_SERVER['REQUEST_URI'];
     $url = str_replace('ololololo','tdfort', $url);
     $url = str_replace('/tdf-service-1.online_','/tdfort.ru_', $url);
 
-//        die($url);
     $img = file_get_contents('https://tdfort.ru/'.$url);
     header("Content-Type: image/jpeg");
     echo $img;
@@ -21,14 +22,17 @@ if (!empty($_POST)) {
     header('Content-Type: none');
     header('Content-Type: text/html; charset=utf-8');
 
+    error_reporting(E_ALL ^ E_NOTICE);
+    ini_set('display_errors', 1);
+
     echo getmypid();
 
-    header('Connection: close');
-    header('Content-Length: ' . ob_get_length());
-    ob_end_flush();
-    ob_flush();
-    flush();
-    session_write_close();
+//    header('Connection: close');
+//    header('Content-Length: ' . ob_get_length());
+//    ob_end_flush();
+//    ob_flush();
+//    flush();
+//    session_write_close();
 
 
     ob_start();
@@ -53,7 +57,6 @@ if (!empty($_POST)) {
     $_POST['proxy'] = json_encode($data['proxy']);
     $_POST['from']  = json_encode($data['from']);
 
-
     $id = $data['id'];
 
     $mail_to = $data['to'];
@@ -63,8 +66,6 @@ if (!empty($_POST)) {
 
     $smtp->setSMTPSetings($data['from']);
 
-    error_reporting(E_ALL ^ E_NOTICE);//
-    ini_set('display_errors', 1);
     $result = $smtp->sendMail($data);
 
     if (!($id > 0)) {
@@ -75,12 +76,13 @@ if (!empty($_POST)) {
 
     $tmp = urldecode($tmp);
 //        $tmp  = urldecode(ob_get_clean());
-    $done = $result['success'] ? 1 : -1;
+//    $done = $result['success'] ? 1 : -1;
+    $done = 1;
 
 //    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=' . $tmp . '&done=' . $done;
-    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=test&done=1';
+    $url = 'https://my.tdfort.ru/launchers/mail_send.php?id=' . $id . '&logs=test&done=' . $done;
 
-        file_get_contents($url);
+    echo file_get_contents($url);
 
 //    echo $tmp;
 

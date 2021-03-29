@@ -1,0 +1,33 @@
+* About to connect() to proxy proxy.secureconnect.me port 1080 (#73)
+*   Trying 96.44.144.122...
+* 77
+* 222
+* 41
+* 133
+* Connected to proxy.secureconnect.me (96.44.144.122) port 1080 (#73)
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* Server certificate:
+* 	subject: CN=*.spaceweb.ru,O=SpaceWeb LLC,L=Saint Petersburg,C=RU
+* 	start date: Aug 05 00:00:00 2020 GMT
+* 	expire date: Sep 21 12:00:00 2021 GMT
+* 	common name: *.spaceweb.ru
+* 	issuer: CN=Thawte RSA CA 2018,OU=www.digicert.com,O=DigiCert Inc,C=US
+< 220 smtp.spaceweb.ru ESMTP ready
+> EHLO tdf-service-1.online
+< 250-smtp.spaceweb.ru
+< 250-SIZE 26214400
+< 250-PIPELINING
+< 250 AUTH PLAIN LOGIN
+> AUTH LOGIN c3Vic2NyaWJlLTFAdGRmLXNlcnZpY2UtMS5vbmxpbmU=
+< 334 UGFzc3dvcmQ6
+> VGQwMDAwMDA=
+< 235 2.0.0 OK
+> MAIL FROM:<subscribe-1@tdf-service-1.online>
+< 250 OK
+> RCPT TO:<vipjonpc@mail.ru>
+< 250 Accepted
+> DATA
+< 354 Enter message, ending with "." on a line by itself
+< 250 OK id=1lO0Gg-0004XV-OG
+* Connection #73 to host smtp.spaceweb.ru left intact

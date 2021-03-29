@@ -1,0 +1,34 @@
+* About to connect() to proxy proxy.torguard.org port 1080 (#6)
+*   Trying 88.202.177.242...
+* 77
+* 222
+* 41
+* 129
+* Connected to proxy.torguard.org (88.202.177.242) port 1080 (#6)
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+* Server certificate:
+* 	subject: CN=*.spaceweb.ru,OU=IT,O=SpaceWeb LLC,L=St. Petersburg,C=RU
+* 	start date: Jun 28 00:00:00 2019 GMT
+* 	expire date: Aug 26 12:00:00 2020 GMT
+* 	common name: *.spaceweb.ru
+* 	issuer: CN=Thawte RSA CA 2018,OU=www.digicert.com,O=DigiCert Inc,C=US
+< 220 smtp.spaceweb.ru ESMTP ready
+> EHLO tdf-service-1.online
+< 250-smtp.spaceweb.ru
+< 250-SIZE 26214400
+< 250-PIPELINING
+< 250 AUTH PLAIN LOGIN
+> AUTH LOGIN c3Vic2NyaWJlLTFAdGRmLXNlcnZpY2UtMS5vbmxpbmU=
+< 334 UGFzc3dvcmQ6
+> VGQwMDAwMDA=
+< 235 2.0.0 OK
+> MAIL FROM:<subscribe-1@tdf-service-1.online>
+< 250 OK
+> RCPT TO:<vipjonpc@mail.ru>
+< 250 Accepted
+> DATA
+< 354 Enter message, ending with "." on a line by itself
+< 250 OK id=1jP7gi-0006xa-Ul
+* Connection #6 to host smtp.spaceweb.ru left intact

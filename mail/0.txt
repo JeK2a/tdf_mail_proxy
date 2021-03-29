@@ -1,0 +1,32 @@
+*   Trying 68.71.244.46...
+* TCP_NODELAY set
+* SOCKS5 communication to smtp.spaceweb.ru:465
+* SOCKS5 connect to IPv4 77.222.41.129 (locally resolved)
+* SOCKS5 request granted.
+
+* Connected to proxy.torguard.org (68.71.244.46) port 1080 (#0)
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-SHA
+* Server certificate:
+*  subject: C=RU; L=St. Petersburg; O=SpaceWeb LLC; OU=IT; CN=*.spaceweb.ru
+*  start date: Jun 28 00:00:00 2019 GMT
+*  expire date: Aug 26 12:00:00 2020 GMT
+*  subjectAltName: host "smtp.spaceweb.ru" matched cert's "*.spaceweb.ru"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+< 220 smtp.spaceweb.ru ESMTP ready
+> EHLO tdf-service-1.online
+< 250-smtp.spaceweb.ru
+< 250-SIZE 26214400
+< 250-PIPELINING
+< 250 AUTH PLAIN LOGIN
+> AUTH PLAIN
+< 334
+> c3Vic2NyaWJlLTFAdGRmLXNlcnZpY2UtMS5vbmxpbmUAc3Vic2NyaWJlLTFAdGRmLXNlcnZpY2UtMS5vbmxpbmUAVGQwMDAwMDA=
+< 235 2.0.0 OK
+> VRFY vipjonpc@mail.ru
+< 252 Administrative prohibition
+* Connection #0 to host proxy.torguard.org left intact

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpdocumentor/fileset" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpdocumentor/graphviz" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-servicemanager" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpdocumentor/phpdocumentor" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpcollection/phpcollection" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpdocumentor/reflection" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-filter" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-i18n" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-config" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-json" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zetacomponents/base" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zendframework/zend-hydrator" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/container-interop/container-interop" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/zetacomponents/document" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/jms/parser-lib" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/jms/metadata" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/jms/serializer" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/cilex/console-service-provider" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/cilex/cilex" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/pimple/pimple" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/padraic/humbug_get_contents" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/padraic/phar-updater" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/validator" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/smtp/vendor/symfony/polyfill-ctype" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

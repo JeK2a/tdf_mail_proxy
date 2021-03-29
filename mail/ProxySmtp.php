@@ -153,14 +153,10 @@ class ProxySmtp
             if (empty($proxy)) {
 //                die('Нет активных proxy');
 
-                echo 'Нет активных proxy';
+                echo   'Нет активных proxy';
+
                 return 'Нет активных proxy';
             }
-
-//            echo '<pre>';
-//            echo __FILE__.' - '.__LINE__."\n";
-//            print_r($proxy);
-//            echo '</pre>';
 
             $this->proxy_type     = $proxy['type'];
             $this->proxy_ip       = $proxy['ip'];
@@ -177,32 +173,16 @@ class ProxySmtp
 
             switch ($this->proxy_type) {
                 case 'http'  :
-                case 'HTTP'  :
-                    $this->proxy_type = CURLPROXY_HTTP;
-                    break;
+                case 'HTTP'  : $this->proxy_type = CURLPROXY_HTTP;   break;
                 case 'https' :
-                case 'HTTPS' :
-                    $this->proxy_type = 2;
-                    break;
+                case 'HTTPS' : $this->proxy_type = 2;                break;
                 case 'socks4':
-                case 'SOCKS4':
-                    $this->proxy_type = CURLPROXY_SOCKS4;
-                    break;
+                case 'SOCKS4': $this->proxy_type = CURLPROXY_SOCKS4; break;
                 case 'socks5':
-                case 'SOCKS5':
-                    $this->proxy_type = CURLPROXY_SOCKS5;
-                    break;
-                default      :
-                    $this->proxy_type = CURLPROXY_SOCKS5;
-                    break;
+                case 'SOCKS5': $this->proxy_type = CURLPROXY_SOCKS5; break;
+                default      : $this->proxy_type = CURLPROXY_SOCKS5; break;
             }
-//            echo '<pre>';
-//            echo __FILE__.' - '.__LINE__."\n";
-//            var_dump($this->smtp_host);
-//            var_dump($this->smtp_port);
-//            var_dump($this->smtp_user);
-//            var_dump($this->smtp_password);
-//            echo '</pre>';
+
 
             curl_setopt($curl, CURLOPT_PROXYTYPE, $this->proxy_type);
 //            curl_setopt($curl, CURLOPT_PROXYTYPE, CURLPROXY_SOCKS5);
@@ -279,14 +259,8 @@ class ProxySmtp
         $mail_to = $this->smtp_to[0];
 
         switch ($code) {
-            case 250:
-                $answer = ' sent proxy';
-                $color = 'green';
-                break;
-            default:
-                $answer = ' error';
-                $color = 'red';
-                break;
+            case 250: $answer = ' sent proxy'; $color  = 'green'; break;
+            default:  $answer = ' error';      $color  = 'red';   break;
         }
 
         $log .= '<span style="color:' . $color . '">' . $answer . " (to " . $mail_to . " with proxy " . $this->proxy_ip . ' from ' . $this->smtp_user . ') </span>';
@@ -296,7 +270,6 @@ class ProxySmtp
         }
 
         echo ' Proxy ';
-
         echo $log;
 
         return true;
@@ -374,7 +347,6 @@ class ProxySmtp
 
     private function setSmtpParams($smtp_id)
     {
-
 //        $smtp_params = $this->getSMTPConfigs($smtp_id);
         $smtp_params = json_decode($_POST['from'], true);
 
@@ -385,7 +357,8 @@ class ProxySmtp
 //                fclose($this->curl_file);
             }
 
-            echo 'Нет почты для отправки';
+            echo   'Нет почты для отправки';
+
             return 'Нет почты для отправки';
         }
 
@@ -394,10 +367,9 @@ class ProxySmtp
         $this->smtp_user     = $smtp_params['email'];
         $this->smtp_password = $smtp_params['password'];
         $this->smtp_from     = $smtp_params['email'];    // TODO ?
-
 //            $this->smtp_timeout  = $smtp_params['timeout'];
         $this->smtp_char_set = $smtp_params['charset'];
-        $this->smtp_secure = $smtp_params['secure'];
+        $this->smtp_secure   = $smtp_params['secure'];
 
         return $smtp_params;
     }

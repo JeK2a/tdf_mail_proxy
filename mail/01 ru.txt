@@ -1,0 +1,34 @@
+* Hostname in DNS cache was stale, zapped
+*   Trying 185.212.171.114...
+* TCP_NODELAY set
+* SOCKS5 communication to smtp.spaceweb.ru:465
+* Hostname in DNS cache was stale, zapped
+* SOCKS5 connect to IPv4 77.222.41.136 (locally resolved)
+* SOCKS5 request granted.
+* Connected to proxy.secureconnect.me (185.212.171.114) port 1085 (#0)
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-SHA
+* Server certificate:
+*  subject: C=RU; L=Saint Petersburg; O=SpaceWeb LLC; CN=*.spaceweb.ru
+*  start date: Aug  5 00:00:00 2020 GMT
+*  expire date: Sep 21 12:00:00 2021 GMT
+*  subjectAltName: host "smtp.spaceweb.ru" matched cert's "*.spaceweb.ru"
+*  issuer: C=US; O=DigiCert Inc; OU=www.digicert.com; CN=Thawte RSA CA 2018
+*  SSL certificate verify ok.
+< 220 smtp.spaceweb.ru ESMTP ready
+> EHLO tdf-service-1.online
+< 250-smtp.spaceweb.ru
+< 250-SIZE 26214400
+< 250-PIPELINING
+< 250 AUTH PLAIN LOGIN
+> AUTH LOGIN
+< 334 VXNlcm5hbWU6
+> c3Vic2NyaWJlLTFAdGRmLXNlcnZpY2UtMS5vbmxpbmU=
+< 334 UGFzc3dvcmQ6
+> VGQwMDAwMDA=
+< 235 2.0.0 OK
+> VRFY vipjonpc@mail.ru
+< 252 Administrative prohibition
+* Connection #0 to host proxy.secureconnect.me left intact
